@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+        Website
+        </title>
+        <link rel="stylesheet" href="asset/css/main.css">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        
+
+    </head>
+
+    <body>
+        <iframe src="asset/sound/Success-sound-effect.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+        </iframe>
+        <audio autoplay  id="playAudio">
+            <source src="asset/sound/Success-sound-effect.mp3">
+        </audio>
+        <script>
+            var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+            if (!isChrome){
+                $('#iframeAudio').remove()
+            }
+            else {
+                $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
+            }
+        </script>
+        <div style="background: url(https://i.postimg.cc/ZnHTP71s/aircraft-airplane-boat-1575833.jpg)" class="page-holder bg-cover">
+
+            <div class="container py-5">
+              <header class="text-center text-white py-5">
+                <h1 class="display-4 font-weight-bold mb-4">
+                    উত্তর সঠিক হয়েছে!</h1>
+              
+          
+            </div>
+           
+                <div class="right-ans text-center">
+                    <a class="" href="quizz_page_05.html">পরবর্তী পৃষ্ঠা</a>
+                </div>
+                
+            
+              </div>
+
+
+          </div>
+ 
+    </body>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</html>
